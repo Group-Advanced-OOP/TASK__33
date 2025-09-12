@@ -31,5 +31,8 @@ public class CardLayoutExample {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     group.show(group2Members, targetCard);
+                    panel.add(label, BorderLayout.CENTER);
+                    panel.add(button, BorderLayout.SOUTH);
+                    return panel;
     }
 }
