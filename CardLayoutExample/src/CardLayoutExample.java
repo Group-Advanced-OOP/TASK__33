@@ -26,5 +26,10 @@ public class CardLayoutExample {
             JPanel panel = new JPanel(new BorderLayout());
             JLabel label = new JLabel(labelText, SwingConstants.CENTER);
             label.setFont(new Font("Arial", Font.BOLD, 18));
+            JButton button = new JButton(buttonText);
+            button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    group.show(group2Members, targetCard);
     }
 }
