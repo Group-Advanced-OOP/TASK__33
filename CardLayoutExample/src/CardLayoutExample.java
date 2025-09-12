@@ -22,17 +22,22 @@ public class CardLayoutExample {
         group2Members.add(card3, "Card3");
         group2.add(group2Members);
         group2.setVisible(true);
-        public JPanel createCard(String labelText, String buttonText, String targetCard) {
-            JPanel panel = new JPanel(new BorderLayout());
-            JLabel label = new JLabel(labelText, SwingConstants.CENTER);
-            label.setFont(new Font("Arial", Font.BOLD, 18));
-            JButton button = new JButton(buttonText);
-            button.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    group.show(group2Members, targetCard);
-                    panel.add(label, BorderLayout.CENTER);
-                    panel.add(button, BorderLayout.SOUTH);
-                    return panel;
+    }
+
+    JPanel createCard(String labelText, String buttonText, String targetCard) {
+        JPanel panel = new JPanel(new BorderLayout());
+        JLabel label = new JLabel(labelText, SwingConstants.CENTER);
+        label.setFont(new Font("Arial", Font.BOLD, 18));
+        JButton button = new JButton(buttonText);
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                group.show(group2Members, targetCard);
+            }
+        });
+
+        panel.add(label, BorderLayout.CENTER);
+        panel.add(button, BorderLayout.SOUTH);
+        return panel;
     }
 }
