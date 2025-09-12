@@ -22,6 +22,8 @@ public class CardLayoutExample {
         group2Members.add(card3, "Card3");
         group2.add(group2Members);
         group2.setVisible(true);
+        public JPanel createCard(String labelText, String buttonText, String targetCard) {
+            JPanel panel = new JPanel(new BorderLayout());
 
     }
 }
