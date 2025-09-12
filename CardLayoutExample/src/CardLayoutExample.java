@@ -24,6 +24,7 @@ public class CardLayoutExample {
         group2.setVisible(true);
         public JPanel createCard(String labelText, String buttonText, String targetCard) {
             JPanel panel = new JPanel(new BorderLayout());
-
+            JLabel label = new JLabel(labelText, SwingConstants.CENTER);
+            label.setFont(new Font("Arial", Font.BOLD, 18));
     }
 }
