@@ -17,6 +17,11 @@ public class CardLayoutExample {
         JPanel card1 = createCard("This is Card One", "Go to Card Two", "Card2");
         JPanel card2 = createCard("This is Card Two", "Go to Card Three", "Card3");
         JPanel card3 = createCard("This is Card Three", "Go to Card One", "Card1");
+        group2Members.add(card1, "Card1");
+        group2Members.add(card2, "Card2");
+        group2Members.add(card3, "Card3");
+        group2.add(group2Members);
+        group2.setVisible(true);
 
     }
 }
