@@ -36,6 +36,10 @@ public class CardLayoutExample {
             }
         });
 
+
+
+        
+
         panel.add(label, BorderLayout.CENTER);
         panel.add(button, BorderLayout.SOUTH);
         return panel;
