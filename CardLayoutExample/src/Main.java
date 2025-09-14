@@ -4,8 +4,3 @@ public class Main {
         SwingUtilities.invokeLater(() -> new CardLayoutExample());
     }
 }
-
-
-
-
-
